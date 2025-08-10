@@ -71,7 +71,7 @@ const AppShowcase = () => {
                 />
               </div>
               <h2>LDP Primary Care — PDSKKI Learning & Development Portal: Certificates, CME Credits & Event Access</h2>
-              <a href="https://www.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
+              <a href="https://ldplayananprimer.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
@@ -79,7 +79,7 @@ const AppShowcase = () => {
                 <img src="/images/18.png" alt="YC Directory App" />
               </div>
               <h2>FMF 2025 – Family Medicine Forum Indonesia: Conference Portal for Program, Registration & Awards</h2>
-              <a href="https://www.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
+              <a href="https://fmf-conference.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
             </div>
           </div>
         </div>
