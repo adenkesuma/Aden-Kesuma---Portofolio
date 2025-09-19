@@ -1,10 +1,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-import AnimatedCounter from "../components/AnimatedCounter";
+// import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
-import { words } from "../constants";
-import HeroExperience from "../components/models/hero_models/HeroExperience";
+// import { words } from "../constants";
+// import HeroExperience from "../components/models/hero_models/HeroExperience";
+import { SparklesCore } from "../components/sparkles";
 
 const Hero = () => {
   useGSAP(() => {
@@ -16,62 +17,49 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
-      </div>
-
-      <div className="hero-layout">
+    <section id="hero" className="overflow-hidden">
+      <div className="h-screen flex items-center justify-center w-full">
         {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+        <header className="h-full w-full mt-32 flex items-center flex-col justify-center max-w-5xl">
           <div className="flex flex-col gap-7">
-            <div className="hero-text">
-              <h1>
-                Shaping
-                <span className="slide">
-                  <span className="wrapper">
-                    {words.map((word, index) => (
-                      <span
-                        key={index}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
-                      >
-                        <img
-                          src={word.imgPath}
-                          alt="person"
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                        />
-                        <span>{word.text}</span>
-                      </span>
-                    ))}
-                  </span>
-                </span>
+            <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+              <h2 className="text-xl md:text-2xl mb-6 font-medium">Hallo, Saya Aden Kesuma <span className="waving-hand">👋</span></h2>
+              <h1 className="md:text-5xl text-3xl lg:text-6xl font-bold mb-6 text-center text-white relative z-20">
+                Membangun Website & Aplikasi <br />untuk Bisnis Kesehatan Anda
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <div className="w-[40rem] h-40 relative">
+                {/* Gradients */}
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                <div className="absolute inset-x-60  top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+                {/* Core component */}
+                <SparklesCore
+                  background="transparent"
+                  minSize={0.4}
+                  maxSize={1}
+                  particleDensity={1200}
+                  className="w-full h-full"
+                  particleColor="#FFFFFF"
+                />
+
+                {/* Radial Gradient to prevent sharp edges */}
+                <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              </div>
             </div>
-
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Aden Kesuma, a developer based in Indonesia with a passion for
-              code.
-            </p>
-
-            <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
-            />
           </div>
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure>
+        {/* <figure>
           <div className="hero-3d-layout">
             <HeroExperience />
           </div>
-        </figure>
+        </figure> */}
       </div>
 
-      <AnimatedCounter />
+      {/* <AnimatedCounter /> */}
     </section>
   );
 };

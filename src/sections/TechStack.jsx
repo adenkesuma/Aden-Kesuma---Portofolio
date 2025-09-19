@@ -36,10 +36,10 @@ const TechStack = () => {
   });
 
   return (
-    <div id="skills" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+    <div id="skills" className="flex-center w-full section-padding">
+      <div className="max-w-5xl h-full">
         <TitleHeader
-          title="How I Can Contribute & My Key Skills"
+          title="Keahlian Utama Saya"
           sub="🤝 What I Bring to the Table"
         />
         <div className="tech-grid">
@@ -50,7 +50,7 @@ const TechStack = () => {
           {techStackIcons.map((techStackIcon) => (
             <div
               key={techStackIcon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              className="card-border tech-card overflow-hidden group rounded-3xl"
             >
               {/* The tech-card-animated-bg div is used to create a background animation when the 
                   component is hovered. */}

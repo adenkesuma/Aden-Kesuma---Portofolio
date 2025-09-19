@@ -54,23 +54,26 @@ const logoIconsList = [
   {
     imgPath: "/images/logos/royal-prima.png",
   },
+  {
+    imgPath: "/images/logos/Trunity.png"
+  }
 ];
 
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Fokus pada Kualitas",
+    desc: "Memberikan hasil berkualitas tinggi dengan perhatian pada setiap detail.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Komunikasi yang Andal",
+    desc: "Selalu memberikan pembaruan di setiap tahap untuk memastikan transparansi dan kejelasan.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Tepat Waktu",
+    desc: "Memastikan proyek selesai sesuai jadwal, dengan kualitas dan perhatian pada detail.",
   },
 ];
 
@@ -133,44 +136,45 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "At SSD Digital, Aden showcased adaptability by handling both frontend development and UI/UX design responsibilities. His versatility and dedication helped deliver high-quality projects despite the agency’s lean structure.",
+      "Di SSD Digital, Aden menunjukkan kemampuan beradaptasi dengan menangani tanggung jawab pengembangan frontend sekaligus desain UI/UX. Versatilitas dan dedikasinya membantu menghasilkan proyek berkualitas tinggi meskipun struktur agensi ramping.",
     imgPath: "SSD Digital",
     logoPath: "1",
     title: "Frontend Developer & UI/UX Designer",
-    date: "January 2022 - December 2023",
+    date: "Januari 2022 - Desember 2023",
     responsibilities: [
-      "Designed and developed user interfaces for various client projects using modern frontend frameworks.",
-      "Collaborated directly with clients to translate business needs into functional and visually appealing designs.",
-      "Handled both frontend coding and UI/UX design tasks in a small agency environment.",
+      "Merancang dan mengembangkan antarmuka pengguna untuk berbagai proyek klien menggunakan framework frontend modern.",
+      "Berkolaborasi langsung dengan klien untuk menerjemahkan kebutuhan bisnis menjadi desain yang fungsional dan menarik.",
+      "Menangani pengkodean frontend sekaligus tugas desain UI/UX dalam lingkungan agensi kecil.",
     ],
   },
   {
     review:
-      "During his time at Origaming, Aden made significant contributions to the frontend of the company’s products, ensuring scalability, performance, and a polished user experience.",
+      "Selama di Origaming, Aden memberikan kontribusi signifikan pada frontend produk perusahaan, memastikan skalabilitas, performa, dan pengalaman pengguna yang maksimal.",
     imgPath: "Origaming",
     logoPath: "2",
     title: "Frontend Developer",
-    date: "January 2023 - June 2025",
+    date: "Januari 2023 - Juni 2025",
     responsibilities: [
-      "Developed and maintained scalable frontend features for Origaming’s web platforms.",
-      "Optimized performance and ensured seamless user interaction across devices.",
-      "Collaborated with backend and design teams to deliver consistent product quality.",
+      "Mengembangkan dan memelihara fitur frontend yang skalabel untuk platform web Origaming.",
+      "Mengoptimalkan performa serta memastikan interaksi pengguna yang lancar di berbagai perangkat.",
+      "Berkolaborasi dengan tim backend dan desain untuk menghadirkan kualitas produk yang konsisten.",
     ],
   },
   {
     review:
-      "As a freelancer, Aden has worked with diverse clients, delivering tailored web and design solutions with a focus on functionality and aesthetics.",
+      "Sebagai freelancer, Aden telah bekerja dengan berbagai klien, menghadirkan solusi web dan desain yang disesuaikan dengan fokus pada fungsionalitas dan estetika.",
     imgPath: "Freelancer",
     logoPath: "3",
     title: "Freelance Frontend Developer & Designer",
-    date: "January 2023 - Present",
+    date: "Januari 2023 - Sekarang",
     responsibilities: [
-      "Delivered end-to-end web development and UI/UX design solutions for various clients.",
-      "Built responsive, user-focused websites and applications using modern tools.",
-      "Provided consultation and implementation for performance improvements and brand-focused designs.",
+      "Menyediakan solusi pengembangan web end-to-end dan desain UI/UX untuk berbagai klien.",
+      "Membangun website dan aplikasi yang responsif serta berfokus pada pengalaman pengguna dengan tools modern.",
+      "Memberikan konsultasi dan implementasi untuk peningkatan performa serta desain yang berorientasi pada brand.",
     ],
   },
 ];
+
 
 const expLogos = [
   {
@@ -189,40 +193,40 @@ const expLogos = [
 
 const testimonials = [
   {
+    name: "Dr. Novana Perdana Putri",
+    mentions: "@dr.novanaputri",
+    review:
+      "Portal pelatihan LDPLP yang dikembangkan oleh Aden telah mengubah cara dokter kami mengakses materi pembelajaran, klaim sertifikat, dan memperoleh poin SKP. Eksekusi teknisnya serta perhatiannya pada pengalaman pengguna sangat berharga bagi operasional kami.",
+  },
+  {
     name: "Harvine",
     mentions: "@harvine",
     review:
-      "Working with Aden at SSD Digital was a game-changer. Despite our small agency setup, he handled both frontend development and UI/UX design seamlessly. His creativity, problem-solving skills, and ability to deliver under tight deadlines made him an irreplaceable part of our team.",
+      "Bekerja dengan Aden di SSD Digital benar-benar menjadi titik balik. Meskipun agensi kami kecil, ia menangani pengembangan frontend dan desain UI/UX dengan sangat baik. Kreativitas, kemampuan problem-solving, dan kemampuannya menyelesaikan pekerjaan di bawah deadline ketat menjadikannya bagian yang tak tergantikan dari tim kami.",
   },
   {
     name: "Billy Ongo",
     mentions: "@billyongo",
     review:
-      "Aden’s contributions to Origaming were nothing short of outstanding. He elevated our frontend systems, optimized performance, and ensured a smooth, engaging user experience for our players. His consistency and technical expertise set a high standard for our development team.",
+      "Kontribusi Aden di Origaming benar-benar luar biasa. Ia meningkatkan sistem frontend kami, mengoptimalkan performa, dan memastikan pengalaman pengguna yang lancar serta menarik bagi para pemain. Konsistensi dan keahlian teknisnya menetapkan standar tinggi bagi tim pengembangan kami.",
   },
   {
     name: "Qori Hasanah",
     mentions: "@qorihasanah",
     review:
-      "As a freelancer, Aden has been my go-to developer for multiple projects. He always delivers clean, scalable, and visually appealing solutions. Whether it’s a tight deadline or complex functionality, Aden approaches each challenge with professionalism and precision.",
+      "Sebagai freelancer, Aden telah menjadi developer andalan saya untuk banyak proyek. Ia selalu memberikan solusi yang rapi, skalabel, dan menarik secara visual. Baik menghadapi deadline ketat maupun fungsi yang kompleks, Aden selalu menyelesaikannya dengan profesionalisme dan presisi.",
   },
   {
     name: "Dr. Isti Ilmiati Fujiati",
     mentions: "@dr.istifujiati",
     review:
-      "Aden played a key role in creating the PDSKKI official website, delivering a platform that is both professional and easy to navigate. His understanding of our organizational vision translated beautifully into the final product, which now serves thousands of members nationwide.",
-  },
-  {
-    name: "Dr. Novana Perdana Putri",
-    mentions: "@dr.novanaputri",
-    review:
-      "The LDPLP training portal developed by Aden has transformed how our doctors access learning resources, claim certificates, and earn CME points. His technical execution and attention to user experience have been invaluable to our operations.",
+      "Aden berperan penting dalam membuat website resmi PDSKKI, menghadirkan platform yang profesional sekaligus mudah digunakan. Pemahamannya terhadap visi organisasi kami diterjemahkan dengan indah ke dalam produk akhir, yang kini melayani ribuan anggota di seluruh Indonesia.",
   },
   {
     name: "Dr. Nuke H. Setiati",
     mentions: "@dr.nukesetiati",
     review:
-      "Aden’s work on the FMF Conference 2025 website was exceptional. He built an event hub that made registration, program navigation, and sponsor integration effortless. The feedback from participants has been overwhelmingly positive, thanks to his meticulous approach.",
+      "Karya Aden pada website Konferensi FMF 2025 sungguh luar biasa. Ia membangun pusat acara yang memudahkan registrasi, navigasi program, dan integrasi sponsor. Umpan balik dari peserta sangat positif, berkat pendekatannya yang detail dan teliti.",
   },
 ];
 

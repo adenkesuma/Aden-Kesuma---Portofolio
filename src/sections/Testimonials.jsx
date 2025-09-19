@@ -4,10 +4,10 @@ import GlowCard from "../components/GlowCard";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+    <section id="testimonials" className="w-full flex-center section-padding">
+      <div className="max-w-5xl h-full">
         <TitleHeader
-          title="What People Say About Me?"
+          title="Apa Kata Orang Tentang Saya?"
           sub="⭐️ Customer feedback highlights"
         />
 

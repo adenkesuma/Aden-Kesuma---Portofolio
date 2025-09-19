@@ -25,8 +25,8 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a href="#hero" className="logo">
-          AdenK
+        <a href="#hero" className="logo py-0">
+          <img src="/images/aden-nav.png" className="w-12 rounded-full p-0" alt="aden nav icon" />
         </a>
 
         <nav className="desktop">

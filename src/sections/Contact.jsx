@@ -40,15 +40,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+    <section id="contact" className="w-full flex-center section-padding">
+      <div className="max-w-5xl h-full">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
+          title="Selesaikan Masalah Anda Bersama Saya!"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
+        <div className="grid-12-cols mt-10 w-full">
           <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-3xl p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -60,6 +60,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
+                    className="rounded-2xl"
                     value={form.name}
                     onChange={handleChange}
                     placeholder="What’s your good name?"
@@ -73,6 +74,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
+                    className="rounded-2xl"
                     value={form.email}
                     onChange={handleChange}
                     placeholder="What’s your email address?"
@@ -85,6 +87,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
+                    className="rounded-2xl"
                     value={form.message}
                     onChange={handleChange}
                     placeholder="How can I help you?"
@@ -93,8 +96,8 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
-                  <div className="cta-button group">
+                <button className="rounded-2xl" type="submit">
+                 <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
                       {loading ? "Sending..." : "Send Message"}

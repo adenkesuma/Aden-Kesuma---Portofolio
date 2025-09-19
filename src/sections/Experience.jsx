@@ -92,11 +92,11 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
+      className="flex-center w-full md:mt-40 mt-20 section-padding"
     >
-      <div className="w-full h-full md:px-20 px-5">
+      <div className="max-w-5xl h-full">
         <TitleHeader
-          title="Professional Work Experience"
+          title="Pengalaman Bekerja Profesional"
           sub="💼 My Career Overview"
         />
         <div className="mt-32 relative">

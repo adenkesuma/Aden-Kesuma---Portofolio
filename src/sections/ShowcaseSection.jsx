@@ -1,91 +1,116 @@
-import { useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+"use client";
 
-gsap.registerPlugin(ScrollTrigger);
+import { Tabs } from "../components/tabs";
+import TitleHeader from "../components/TitleHeader";
 
-const AppShowcase = () => {
-  const sectionRef = useRef(null);
-  const rydeRef = useRef(null);
-  const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
-
-  useGSAP(() => {
-    // Animation for the main section
-    gsap.fromTo(
-      sectionRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
-    );
-
-    // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
-
-    cards.forEach((card, index) => {
-      gsap.fromTo(
-        card,
-        {
-          y: 50,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          delay: 0.3 * (index + 1),
-          scrollTrigger: {
-            trigger: card,
-            start: "top bottom-=100",
-          },
-        }
-      );
-    });
-  }, []);
+export default function AppShowcase() {
+  const tabs = [
+    {
+      title: "RSU Royal Prima",
+      value: "RSUROYALPRIMA",
+      content: (
+        <div
+          className="w-full overflow-hidden relative h-full rounded-3xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-blue-800">
+          <div className="flex flex-col gap-1">
+            <h2>Aplikasi Pelaporan Jam Kerja | RSU Royal Prima</h2>
+            <p className="text-sm text-gray-200 font-normal">Aplikasi ini adalah sistem web dan mobile yang dirancang untuk mencatat aktivitas kerja harian karyawan, memungkinkan atasan untuk menyetujui tugas, serta memberikan pimpinan perusahaan wawasan real-time tentang kinerja unit dan organisasi melalui dashboard, laporan, dan perhitungan produktivitas otomatis</p>
+          </div>
+          <img
+            src="/images/rsurp-thumbnail.png"
+            alt="rsurp image"
+            width="1000"
+            height="1000"
+            className="object-cover object-left-top h-[80%] absolute -bottom-4 inset-x-0 rounded-2xl mx-auto" />
+        </div>
+      ),
+    },
+    {
+      title: "PDSKKI",
+      value: "PDSKKI",
+      content: (
+        <div
+          className="w-full overflow-hidden relative h-full rounded-3xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-800 to-blue-900">
+          <div className="flex flex-col gap-1">
+            <h2>Aplikasi Organisasi Kedokteran | PDSKKI</h2>
+            <p className="text-sm text-gray-200 font-normal">Aplikasi ini merupakan sistem berbasis web dan mobile yang dibuat untuk mencatat aktivitas kerja harian karyawan, memudahkan atasan dalam menyetujui tugas, serta memberikan pimpinan perusahaan wawasan secara real-time mengenai kinerja unit dan organisasi melalui dashboard, laporan, dan perhitungan produktivitas otomatis</p>
+          </div>
+          <img
+            src="/images/pdskki-thumbnail.png"
+            alt="pdskki image"
+            width="1000"
+            height="1000"
+            className="object-cover object-left-top h-[80%] absolute -bottom-4 inset-x-0 rounded-2xl mx-auto" />
+        </div>
+      ),
+    },
+    {
+      title: "LDP Layanan Primer",
+      value: "LDPLP",
+      content: (
+        <div
+          className="w-full overflow-hidden relative h-full rounded-3xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-green-500 to-green-800">
+          <div className="flex flex-col gap-1">
+            <h2>Aplikasi Portal Pembelajaran | LDP Layanan Primer</h2>
+            <p className="text-sm text-gray-200 font-normal">LDP Primary Care adalah portal resmi Pembelajaran & Pengembangan PDSKKI yang menyediakan akses mudah bagi tenaga medis untuk mengikuti pelatihan, memperoleh sertifikat, mengumpulkan SKP (CME Credits), serta berpartisipasi dalam berbagai acara dan kegiatan ilmiah secara terstruktur dan terintegrasi.</p>
+          </div>
+          <img
+            src="/images/ldp-thumbnail.png"
+            alt="ldp layanan primer image"
+            width="1000"
+            height="1000"
+            className="object-cover object-left-top h-[80%] absolute -bottom-4 inset-x-0 rounded-2xl mx-auto" />
+        </div>
+      ),
+    },
+    {
+      title: "FMF Conference",
+      value: "FMF",
+      content: (
+        <div
+          className="w-full overflow-hidden relative h-full rounded-3xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-yellow-600 to-yellow-500">
+          <div className="flex flex-col gap-1">
+            <h2>Aplikasi Portal Konferensi | FMF Conference</h2>
+            <p className="text-sm font-normal">FMF 2025 – Family Medicine Forum Indonesia adalah portal konferensi resmi yang menyediakan informasi lengkap mengenai program acara, pendaftaran peserta, serta penghargaan. Platform ini dirancang untuk memudahkan tenaga medis dan peserta dalam mengakses agenda, materi, dan berbagai kegiatan ilmiah secara terpusat.
+            </p>
+          </div>
+          <img
+            src="/images/fmf-thumbnail.png"
+            alt="fmf conference image"
+            width="1000"
+            height="1000"
+            className="object-cover object-left-top h-[80%] absolute -bottom-4 inset-x-0 rounded-2xl mx-auto" />
+        </div>
+      ),
+    },
+    {
+      title: "Trunity",
+      value: "TRUNITY",
+      content: (
+        <div
+          className="w-full overflow-hidden relative h-full rounded-3xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-blue-800">
+          <div className="flex flex-col gap-1">
+            <h2>Aplikasi Company Profile | Trunity Agency</h2>
+            <p className="text-sm text-gray-200 font-normal">Trunity Agency adalah agency asuransi profesional dengan pengalaman lebih dari 18 tahun, berfokus pada perlindungan jiwa, kesehatan, dan perencanaan finansial. Kami hadir untuk melindungi, menumbuhkan, dan mewariskan nilai finansial bagi setiap klien maupun generasi berikutnya.</p>
+          </div>
+          <img
+            src="/images/trunity-thumbnail.png"
+            alt="trunity image"
+            width="1000"
+            height="1000"
+            className="object-cover object-left-top h-[80%] absolute -bottom-4 inset-x-0 rounded-2xl mx-auto" />
+        </div>
+      ),
+    },
+  ];
 
   return (
-    <div id="work" ref={sectionRef} className="app-showcase">
-      <div className="w-full">
-        <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/20.jpg" alt="Ryde App Interface" />
-            </div>
-            <div className="text-content">
-              <h2>
-                PDSKKI – Indonesian Family Physicians Association: The Hub for Primary Health Care Excellence
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                The official website of PDSKKI (Perhimpunan Dokter Keluarga Indonesia) serves as the central platform for professional development, collaboration, and knowledge exchange among family physicians in Indonesia. Operating under the Indonesian Medical Association (IDI), it provides resources, news, and events aimed at strengthening primary health care practices across the nation.
-              </p>
-              <a href="https://www.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
-            </div>
-          </div>
-
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/19.png"
-                  alt="Library Management Platform"
-                />
-              </div>
-              <h2>LDP Primary Care — PDSKKI Learning & Development Portal: Certificates, CME Credits & Event Access</h2>
-              <a href="https://www.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
-            </div>
-
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/18.png" alt="YC Directory App" />
-              </div>
-              <h2>FMF 2025 – Family Medicine Forum Indonesia: Conference Portal for Program, Registration & Awards</h2>
-              <a href="https://www.pdskki.com/" className="underline text-lg font-semibold text-cyan-500">Link</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div
+      className="h-[40rem] md:h-[60rem] [perspective:1000px] relative flex flex-col items-center max-w-5xl mx-auto w-full justify-start pb-20">
+      <TitleHeader
+        title="Proyek Yang Pernah Saya Kerjakan"
+        sub="🌐 My Works Overview"
+      />
+      <Tabs tabs={tabs} />
     </div>
   );
-};
-
-export default AppShowcase;
+}
