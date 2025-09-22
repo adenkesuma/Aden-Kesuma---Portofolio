@@ -3,7 +3,7 @@ import { socialImgs } from "../constants";
 const About = () => {
     return (
         <section
-          id="experience"
+          id="about"
           className="bg-[#101010] mt-5 mb-20 flex-center w-full section-padding"
         >
           <div className="max-w-5xl px-4 lg:px-0 h-full">
