@@ -8,7 +8,7 @@ const About = () => {
         >
           <div className="max-w-5xl px-4 lg:px-0 h-full">
             <div className="flex flex-col md:flex-row items-center pt-10">
-                <img src='../../public/images/aden.png' className="order-2 md:order-1 w-full md:w-1/2" alt="image aden" />
+                <img src='/images/aden.png' className="order-2 md:order-1 w-full md:w-1/2" alt="image aden" />
                 <div className="w-full md:w-1/2 order-1 md:order-2">
                     <h2 className="mb-3 text-xl md:text-3xl font-semibold">Aden Kesuma | Spesialis Digital Solution untuk Healthcare Industry</h2>
                     <span className="text-base text-gray-200">
