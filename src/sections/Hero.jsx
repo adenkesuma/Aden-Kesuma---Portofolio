@@ -17,16 +17,14 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="overflow-hidden">
-      <div className="h-screen flex items-center justify-center w-full">
+    <section id="hero">
+      <div className="px-4 lg:px-0 h-screen flex items-center justify-center w-full">
         {/* LEFT: Hero Content */}
-        <header className="h-full w-full mt-32 flex items-center flex-col justify-center max-w-5xl">
-          <div className="flex flex-col gap-7">
-            <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <header className="h-full w-full mt-32 flex items-center flex-col justify-center flex-wrap max-w-5xl">
+          <div className="w-full flex flex-col gap-7 flex-wrap">
+            <div className="w-full bg-black flex flex-col items-center justify-center">
               <h2 className="text-xl md:text-2xl mb-6 font-medium">Hallo, Saya Aden Kesuma <span className="waving-hand">👋</span></h2>
-              <h1 className="md:text-5xl text-3xl lg:text-6xl font-bold mb-6 text-center text-white relative z-20">
-                Membangun Website & Aplikasi <br />untuk Bisnis Kesehatan Anda
-              </h1>
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-center text-white">Membangun Website & Aplikasi untuk Bisnis Kesehatan Anda</h1>
               <div className="w-[40rem] h-40 relative">
                 {/* Gradients */}
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />

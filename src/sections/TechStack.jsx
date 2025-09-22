@@ -37,7 +37,7 @@ const TechStack = () => {
 
   return (
     <div id="skills" className="flex-center w-full section-padding">
-      <div className="max-w-5xl h-full">
+      <div className="max-w-5xl h-full px-4 lg:px-0">
         <TitleHeader
           title="Keahlian Utama Saya"
           sub="🤝 What I Bring to the Table"

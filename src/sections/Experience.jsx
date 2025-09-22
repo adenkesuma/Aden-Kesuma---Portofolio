@@ -94,12 +94,12 @@ const Experience = () => {
       id="experience"
       className="flex-center w-full md:mt-40 mt-20 section-padding"
     >
-      <div className="max-w-5xl h-full">
+      <div className="max-w-5xl px-4 lg:px-0 h-full">
         <TitleHeader
           title="Pengalaman Bekerja Profesional"
           sub="💼 My Career Overview"
         />
-        <div className="mt-32 relative">
+        <div className="mt-10 md:mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">

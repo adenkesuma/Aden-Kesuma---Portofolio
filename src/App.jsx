@@ -8,9 +8,10 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import LogoShowcase from "./sections/LogoShowcase";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
+import WhatsAppWidget from "./components/WhatsappWidget";
 
 const App = () => (
-  <>
+  <div>
     <Navbar />
     <Hero />
     <ShowcaseSection />
@@ -21,7 +22,8 @@ const App = () => (
     <Testimonials />
     <Contact />
     <Footer />
-  </>
+    <WhatsAppWidget />
+  </div>
 );
 
 export default App;

@@ -517,3 +517,116 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
+.whatsapp-widget {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+}
+
+.whatsapp-button {
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  transform: scale(1.05);
+}
+
+.whatsapp-button.active {
+  transform: rotate(360deg);
+  background-color: #128C7E;
+}
+
+.whatsapp-panel {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 280px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.whatsapp-header {
+  padding: 15px;
+  background: #075E54;
+  color: white;
+}
+
+.whatsapp-header h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.whatsapp-header p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.options-container {
+  padding: 10px;
+}
+
+.option-item {
+  padding: 12px 15px;
+  margin: 5px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.option-item:hover {
+  background: #f0f0f0;
+}
+
+.option-item.custom {
+  background: #f8f8f8;
+  border: 1px dashed #ddd;
+  color: #555;
+}
+
+.option-item.custom:hover {
+  background: #eaeaea;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.whatsapp-panel {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .whatsapp-widget {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .whatsapp-panel {
+    width: 250px;
+    bottom: 60px;
+  }
+}

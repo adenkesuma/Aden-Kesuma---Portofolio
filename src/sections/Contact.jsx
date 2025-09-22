@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="w-full flex-center section-padding">
-      <div className="max-w-5xl h-full">
+      <div className="max-w-5xl h-full px-4 lg:px-0">
         <TitleHeader
           title="Selesaikan Masalah Anda Bersama Saya!"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
